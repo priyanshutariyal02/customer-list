@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.container-1 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+
+}
+
+.container-1 h2 {
+    font-weight: bold;
+}
+
+.input {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+
+}
+
+.btn-submit-1 {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: rgb(23, 162, 255);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn-submit-1:hover {
+    background-color: rgb(69, 181, 255);
+    transition: 0.3s ease;
+}
+
+.container-2 {
+    margin-top: 30px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2 h3 {
+    font-weight: bold;
+}
+
+.top-part {
+    display: flex;
+    flex-direction: row;
+    gap: 16%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-add-customer {
+    padding: 1px 10px 1px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 89, 255);
+    color: white;
+}
+
+.btn-add-customer:hover {
+    background-color: rgb(47, 120, 255);
+    transition: .3s ease;
+}
+
+.top-part p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid rgb(0, 0, 0);
+    opacity: 100;
+    width: 70%;
+}
+
+.container-2 #list tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 48px;
+
+}
+
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+th {
+    font-weight: bolder;
+}
+
+td {
+    font-size: 15px;
+}
+
+
+.container-3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-3 .details {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    gap: 15px;
+
+}
+
+.details input {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.811);
+    padding: 15px;
+    width: 75%;
+    border-radius: 5px;
+}
+
+.btn-submit-2 {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.submit-2 {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit-2:hover {
+    background-color: rgb(33, 111, 255);
+    transition: 0.3s ease;
+}
+
+.btn-delete {
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.btn-edit {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(49, 49, 49);
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    .container-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+    }
+
+    .container-2 {
+        display: flex;
+        margin-top: 100px;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .container-2 .table-responsive {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-3,
+    .container-3 .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .container-3 h3 {
+        text-align: center;
+    }
+
+    .container-3 .btn-submit-2 {
+        justify-content: center;
+    }
+}
